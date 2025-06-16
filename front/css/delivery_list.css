@@ -21,8 +21,6 @@ body {
 }
 
 
-
-
 h1 {
     margin-top: 80px;
     font-size: 40px;
@@ -35,6 +33,44 @@ h1 {
     font-size: 18px;
     text-decoration: none;
     color: #222;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    transition: left 0.3s;
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 24px 0;
+}
+
+.side-menu a {
+    color: #222;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 24px;
+    display: block;
+}
+
+.side-menu a:hover {
+    background: #f0f0f0;
 }
 
 .delivery-list-container {
